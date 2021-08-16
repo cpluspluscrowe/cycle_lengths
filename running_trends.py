@@ -60,9 +60,6 @@ import matplotlib.pyplot as plt
 plt.close("all")
 plt.figure();
 
-ax = df1.plot()
-
-df2.plot()
 
 ax = pd.DataFrame(twoDays).plot()
 pd.DataFrame(threeDays).plot(ax=ax)
@@ -74,8 +71,8 @@ pd.DataFrame(elevenDays).plot(ax=ax)
 ax.set_title("Distance over Different Cycle Lengths")
 ax.set_xlabel("Date")
 ax.set_ylabel("Distance (miles)")
-ax.legend(["two day cycle", "three day cycle", "seven day cycle", "eight day cycle", "nine day cycle","ten day cycle"])
-plt.show()
+ax.legend(["two day cycle", "three day cycle", "seven day cycle", "eight day cycle", "nine day cycle","ten day cycle", "elevent day cycle"])
+plt.savefig("Running_Cycles.png")
 # easy, workout, rest template
 # x x x x x x x x x
 # 1 2 0 1 2 0 1 2 0
